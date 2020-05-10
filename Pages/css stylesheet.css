@@ -1,15 +1,55 @@
+h1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-family: "Segoe UI",  serif;
+    font-kerning: auto;
+    font-size: xx-large;
+}
+
+hr { display: block; overflow: visible; border-style: inset; border-width: 1px;}
+
 body {
     background: #eeeeee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI Light", serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    text-align-all: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
+    font-variant-caps: all-petite-caps;
+    font-family: "Segoe UI",serif;
     display: inline-block;
-    margin-right: 20px;
+    text-align-all: center;
+    padding-bottom: 10px;
+
+}
+
+
+a:link{
+    text-decoration-line: none;
+    color: black;
+}
+a:visited{
+    color: dimgray;
+    text-decoration-line: none;
+
+
+}
+a:hover{
+    color: lightgray;
+    text-underline-position: under;
+
+
 }
