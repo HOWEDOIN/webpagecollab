@@ -17,7 +17,39 @@
 </header>
 <h1>Symptoms of COVID-19</h1>
 
-<p>Insert Content Here</p>
+<p style="margin-left: 25%; margin-right: 25%; text-align-all: justify">
+    <strong>Seek immediate medical attention</strong> if you have serious symptoms. Always <strong>call</strong> before visiting your doctor or health facility.
+    On average it takes <strong>5–6 days</strong> from when someone is infected with the virus for symptoms to show, however it can take up to <strong>14 days</strong>.
+</p>
+
+<h3>
+    Most Common Symptoms
+</h3>
+<p style="margin-left: 40%; margin-right: auto; text-align: left">
+    1. Fever<br>
+    2. Dry cough<br>
+    3. Tiredness<br>
+</p>
+<h3>
+    Less Common Symptoms
+</h3>
+<p style="margin-left: 40%; margin-right: auto; text-align: left">
+    1. Aches and pains<br>
+    2. Sore throat<br>
+    3. Diarrhoea<br>
+    4. Conjunctivitis<br>
+    5. Headache<br>
+    6. Loss of taste or smell<br>
+    7. Rash on skin, or discolouration of fingers or toes<br>
+</p>
+<h3>
+    Serious Symptoms
+</h3>
+<p style="margin-left: 40%; margin-right: auto; text-align: left">
+    1. Difficulty breathing or shortness of breath<br>
+    2. Chest pain or pressure<br>
+    3. Loss of speech or movement<br>
+</p>
 <hr/>
 <p>
     <em>We believe that staying informed during a pandemic is a responsibility as global citizens. On this site, we hope

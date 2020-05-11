@@ -26,7 +26,12 @@
 </header>
 <h1>History of epidemics in the past</h1>
 
-<p>Insert Content Here</p>
+<h3>
+    Insert Title Here
+</h3>
+<p style="margin-left: 20%; margin-right: 20%; text-align-all: justify">
+    Insert Content Here
+</p>
 <hr/>
 <p>
     <em>We believe that staying informed during a pandemic is a responsibility as global citizens. On this site, we hope
