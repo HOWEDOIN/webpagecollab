@@ -9,7 +9,7 @@
 <header>
     <nav>
         <ul>
-            <li><a href="Main.php" style="text-align: center">Home</a></li> | <li><a href="Details.php" style="text-align: center">Details about COVID-19</a></li> | <li><a href="Symptoms.php" style="text-align: center">Symptoms of COVID-19</a></li> | <li><a href="History.php" style="text-align: center">History of World-wide Epidemics</a></li> | <li><a href="Statistics.php" style="text-align: center"> Current Statistics of COVID-19 Cases Worldwide</a></li>
+            <li><a href="Main.php" class="center">Home</a></li> | <li><a href="Details.php" class="center">Details about COVID-19</a></li> | <li><a href="Symptoms.php" class="center">Symptoms of COVID-19</a></li> | <li><a href="History.php" class="center">History of World-wide Epidemics</a></li> | <li><a href="Statistics.php" class="center"> Current Statistics of COVID-19 Cases Worldwide</a></li>
         </ul>
         <img src="Symptoms.png" alt="Cover Photo">
         <hr/>
@@ -25,7 +25,7 @@
 <h3>
     Most Common Symptoms
 </h3>
-<p style="margin-left: 40%; margin-right: auto; text-align: left">
+<p class="symptoms">
     1. Fever<br>
     2. Dry cough<br>
     3. Tiredness<br>
@@ -33,7 +33,7 @@
 <h3>
     Less Common Symptoms
 </h3>
-<p style="margin-left: 40%; margin-right: auto; text-align: left">
+<p class="symptoms">
     1. Aches and pains<br>
     2. Sore throat<br>
     3. Diarrhoea<br>
@@ -45,7 +45,7 @@
 <h3>
     Serious Symptoms
 </h3>
-<p style="margin-left: 40%; margin-right: auto; text-align: left">
+<p class="symptoms">
     1. Difficulty breathing or shortness of breath<br>
     2. Chest pain or pressure<br>
     3. Loss of speech or movement<br>
