@@ -27,3 +27,38 @@ if ($err) {
 } else {
     echo $response;
 }
+
+//template for api to table
+
+$table .= <<<HTML
+<table>
+	<tr>
+		<th>Country</th>
+		<th>Total Cases</th>
+		<th>New Cases</th>
+		<th>Total Deaths</th>
+		<th>Total Recovered</th>
+		<th>Active Cases</th>
+		<th>Critical Cases</th>
+		<th>Total Cases per Million</th>
+		<th>Total Deaths per Million</th>
+		<th>Last Updated</th>
+	</tr>
+HTML;
+
+foreach ($response['clients']['client'] as $v)
+{
+    $table .= <<<HTML
+	<tr>
+		<td>{$v['firstname']} {$v['firstname']} {$v['companyname']}</td>
+		<td>{$v['email']}</td>
+		<td>{$v['status']}</td>
+	</tr>
+HTML;
+}
+
+$table .= <<<HTML
+</table>
+HTML;
+
+echo $table;

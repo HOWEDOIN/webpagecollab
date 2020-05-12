@@ -18,9 +18,70 @@
 <h3>
     Insert Title Here
 </h3>
-<p style="margin-left: 20%; margin-right: 20%; text-align-all: justify">
-    Insert Content Here
-</p>
+<p style="margin-left: 20%; margin-right: 20%; text-align-all: justify" </p>
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+    CURLOPT_URL => "https://covid-19-live-stats.p.rapidapi.com/livestats",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "GET",
+    CURLOPT_HTTPHEADER => array(
+        "x-rapidapi-host: covid-19-live-stats.p.rapidapi.com",
+        "x-rapidapi-key: 93640da901msh51758ec1344a0ebp15f840jsncf9045cfc3b3"
+    ),
+));
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+    echo "cURL Error #:" . $err;
+} else {
+    $table .= <<<HTML
+<table>
+	<tr>
+		<th>Country</th>
+		<th>Total Cases</th>
+		<th>New Cases</th>
+		<th>Total Deaths</th>
+		<th>Total Recovered</th>
+		<th>Active Cases</th>
+		<th>Critical Cases</th>
+		<th>Total Cases per Million</th>
+		<th>Total Deaths per Million</th>
+		<th>Last Updated</th>
+	</tr>
+HTML;
+
+    foreach ($response['clients']['client'] as $v)
+    {
+        $table .= <<<HTML
+	<tr>
+		<td>{$v['Country']}</td>
+		<td>{$v['Total Cases']}</td>
+		<td>{$v['New Cases']}</td>
+		<td>{$v['Total Deaths']}</td>
+		<td>{$v['Total Recovered']}</td>
+		<td>{$v['Active Cases']}</td>
+		<td>{$v['Critical Cases']}</td>
+		<td>{$v['Total Cases per Million']}</td>
+		<td>{$v['Total Deaths per Million']}</td>
+		<td>{$v['Last Updated']}</td>
+	</tr>
+HTML;
+        echo $table;
+    }
+}
+?>
 <hr/>
 <p>
     <em>We believe that staying informed during a pandemic is a responsibility as global citizens. On this site, we hope
