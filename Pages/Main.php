@@ -9,7 +9,7 @@
 <header>
     <nav>
         <ul>
-            <li><a href="Main.php" style="text-align: center">Home</a></li> | <li><a href="Details.php" style="text-align: center">Details about COVID-19</a></li> | <li><a href="Symptoms.php" style="text-align: center">Symptoms of COVID-19</a></li> | <li><a href="History.php" style="text-align: center">History of World-wide Epidemics</a></li> | <li><a href="Statistics.php" style="text-align: center"> Current Statistics of COVID-19 Cases Worldwide</a></li>
+            <li><a href="Main.php" class="center">Home</a></li> | <li><a href="Details.php" class="center">Details about COVID-19</a></li> | <li><a href="Symptoms.php" class="center">Symptoms of COVID-19</a></li> | <li><a href="History.php" class="center">History of World-wide Epidemics</a></li> | <li><a href="Statistics.php" class="center"> Current Statistics of COVID-19 Cases Worldwide</a></li>
         </ul>
         <img src="CoverImage.png" alt="Cover Photo">
         <hr/>
