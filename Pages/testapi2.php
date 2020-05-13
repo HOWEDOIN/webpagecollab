@@ -26,7 +26,55 @@ if ($err) {
     echo "cURL Error #:" . $err;
 } else {
     $arr = explode('"',$response);
+    $exlcuded_words = array( ':',',','},','{',':{',':[{','},{','}]}',' currentItem is : ',' totalCases','newCases','totalDeaths','totalRecovered',' activeCases','criticalCases','totalCasesPerMillion','totalDeathsPerMillion','lastUpdated','countryWise','country','totalCases','activeCases','current');
+    $arr1 = array();
+    $arr2 = array();
     foreach ($arr as $item)
-        if (strlen($item)>2)
-    echo "Item is : ".$item;
+            array_push($arr1,$item);
+    $finarray = array_diff($arr1,$exlcuded_words);
+    foreach ($finarray as $i) {
+        if (substr($i, -1) != "Z") {
+            array_push($arr2, $i);
+        }
+    }
+    array_unshift($arr2,"All countries");
+    $arr3 = array();
+    while(count($arr2)>0) {
+        for ($y =0;$y <=8;$y++){
+            $temp = array();
+            array_push($temp,array_shift($arr2));
+        }
+        array_push($arr3,$temp);
+    }
+    }
+    $table .= <<<HTML
+   <table>
+	<tr>
+		<th>Country</th>
+		<th>Total Cases</th>
+		<th>New Cases</th>
+		<th>Total Deaths</th>
+		<th>Total Recovered</th>
+		<th>Active Cases</th>
+		<th>Critical Cases</th>
+		<th>Total Cases per Million</th>
+		<th>Total Deaths per Million</th>
+	</tr>
+HTML;
+    foreach ($arr3 as $v)
+    {
+        $table .= <<<HTML
+	<tr>
+		<td>{$v[0]}</td>
+		<td>{$v[1]}</td>
+		<td>{$v[2]}</td>
+		<td>{$v[3]}</td>
+		<td>{$v[4]}</td>
+		<td>{$v[5]}</td>
+		<td>{$v[6]}</td>
+		<td>{$v[7]}</td>
+		<td>{$v[8]}</td>
+	</tr>
+HTML;
+        echo $table;
 }

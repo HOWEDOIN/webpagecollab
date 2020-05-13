@@ -46,40 +46,40 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
-    $table .= <<<HTML
-<table>
-	<tr>
-		<th>Country</th>
-		<th>Total Cases</th>
-		<th>New Cases</th>
-		<th>Total Deaths</th>
-		<th>Total Recovered</th>
-		<th>Active Cases</th>
-		<th>Critical Cases</th>
-		<th>Total Cases per Million</th>
-		<th>Total Deaths per Million</th>
-		<th>Last Updated</th>
-	</tr>
-HTML;
-
-    foreach ($response['clients']['client'] as $v)
-    {
-        $table .= <<<HTML
-	<tr>
-		<td>{$v['Country']}</td>
-		<td>{$v['Total Cases']}</td>
-		<td>{$v['New Cases']}</td>
-		<td>{$v['Total Deaths']}</td>
-		<td>{$v['Total Recovered']}</td>
-		<td>{$v['Active Cases']}</td>
-		<td>{$v['Critical Cases']}</td>
-		<td>{$v['Total Cases per Million']}</td>
-		<td>{$v['Total Deaths per Million']}</td>
-		<td>{$v['Last Updated']}</td>
-	</tr>
-HTML;
+//    $table .= <<<HTML
+//<table>
+//	<tr>
+//		<th>Country</th>
+//		<th>Total Cases</th>
+//		<th>New Cases</th>
+//		<th>Total Deaths</th>
+//		<th>Total Recovered</th>
+//		<th>Active Cases</th>
+//		<th>Critical Cases</th>
+//		<th>Total Cases per Million</th>
+//		<th>Total Deaths per Million</th>
+//		<th>Last Updated</th>
+//	</tr>
+//HTML;
+//
+//    foreach ($response['clients']['client'] as $v)
+//    {
+//        $table .= <<<HTML
+//	<tr>
+//		<td>{$v['Country']}</td>
+//		<td>{$v['Total Cases']}</td>
+//		<td>{$v['New Cases']}</td>
+//		<td>{$v['Total Deaths']}</td>
+//		<td>{$v['Total Recovered']}</td>
+//		<td>{$v['Active Cases']}</td>
+//		<td>{$v['Critical Cases']}</td>
+//		<td>{$v['Total Cases per Million']}</td>
+//		<td>{$v['Total Deaths per Million']}</td>
+//		<td>{$v['Last Updated']}</td>
+//	</tr>
+//HTML;
         echo $table;
-    }
+//    }
 }
 ?>
 <hr/>
