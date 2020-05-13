@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test Title</title>
+    <title>Covid19</title>
     <link rel="stylesheet" type="text/css" href="css%20stylesheet.css">
 </head>
 <body>
