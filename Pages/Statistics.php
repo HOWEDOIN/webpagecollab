@@ -46,6 +46,7 @@ curl_close($curl);
 if ($err) {
     echo "cURL Error #:" . $err;
 } else {
+    echo "Last Updated : ".date("M,d,Y h:i:s A");
     $arr = explode('"', $response);
     $exlcuded_words = array(':', ',', '},', '{', ':{', ':[{', '},{', '}]}', ' currentItem is : ', ' totalCases', 'newCases', 'totalDeaths', 'totalRecovered', ' activeCases', 'criticalCases', 'totalCasesPerMillion', 'totalDeathsPerMillion', 'lastUpdated', 'countryWise', 'country', 'totalCases', 'activeCases', 'current');
     $arr1 = array();

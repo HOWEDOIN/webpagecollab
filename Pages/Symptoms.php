@@ -56,7 +56,7 @@
         to inform you regarding the current known facts and figures about this worldwide pandemic.</em>
 </p>
 <p>
-    <em>This site is created and maintained by Ng Hao Yu (WIE180028,17093643/1) and Lee Hauii (WIE180020,17142346/1)</em>
+    <em>This site is created and maintained by <strong>Ng Hao Yu</strong> (WIE180028,17093643/1) and <strong>Lee Hauii</strong> (WIE180020,17142346/1)</em>
 </p>
 <p>
     You can check out some details about COVID-19 <a href="Details.php" style="color: seagreen"><u>here</u></a>.
